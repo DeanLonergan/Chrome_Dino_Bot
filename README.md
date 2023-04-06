@@ -6,7 +6,12 @@ There were ten teams of two, my teammate [@LukeCanny](https://github.com/lukecan
 
 ![high score](https://user-images.githubusercontent.com/74914758/230321715-c2066023-efdf-4924-a211-8e92dbb3e592.png)
 
+# How it works
+
+The program works using image processing. Each cycle, a screenshot of the game area is taken and checked for obstacles ahead of the Dino. It does this by searching a line of pixels starting just in front of the Dino and out to a predefined search distance. The program loops through this line of pixels, starting from the furthest pixel from the Dino to the closest. If a pixel is determined to be a different colour from the background, it's considered an obstacle, and the Dino will react accordingly. The search distance is increased over time so that the Dino reacts quicker and quicker as the game difficulty increases.
+
 # Setup
+
 First, the following packages are required:
 * PyAutoGUI
 * Keyboard
@@ -21,7 +26,7 @@ Next, it's important to understand the variables used by the program so that the
 * top - how far down from the top of the screen the top of the game area will begin
 * left - how far to the left the game area should start (almost always 0 when fullscreened)
 * width - the total width of the game area (almost always the monitor width when fullscreened)
-* height - the height of the game area (top + height = how far down from the top of the screen the game area will end)
+* height - the height of the game area (top + height = total distance from the top of the screen)
 * sky_colour - a pixel that only changes when the sky colour changes
 
 The screenshot below represents the game area as described using the above variables. These variables are entirely dependent on monitor resolution and must be changed on a case-by-case basis. The program was written on my work laptop with a screen resolution of 1920x1080. However, factors such as: resolution scaling or a bookmark bar can throw the program off. It's best to use PyAutoGUI to determine the game area for your own setup prior to running.
@@ -46,6 +51,6 @@ Every machine is different, so it will take some time to dial in these variables
 
 # Run
 
-Running the program is very straight forward. Ensure the official version of the Chrome Dino game (navigate to chrome://dino/) is open and ready to go in your browser. Then run chrome_dino_bot.py, switch to the browser and click on the browser window to so that it is active. You'll know after the first cactus if it's working or not. When you want the program to stop, just press the escape key.
+Running the program is very straight forward. Ensure the official version of the Chrome Dino game is open and ready to go in your browser (navigate to chrome://dino/). Then run chrome_dino_bot.py, switch to the browser and click on the browser window to so that it is active. You'll know after the first cactus if it's working or not. When you want the program to stop, just press the escape key.
 
-Bear in mind that the program uses a timer to determine the game speed, so simply restarting the game after a game over will result in the program continuing to assume the game is running at a higher speed. Every time the game restarts, the program must also be restarted
+Bear in mind that the program uses a timer to determine the game speed, so simply restarting the game after a game over will result in the program continuing to assume the game is running at a higher speed. Every time the game restarts, the program must also be restarted.
