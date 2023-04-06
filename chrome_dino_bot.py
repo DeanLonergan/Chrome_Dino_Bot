@@ -25,7 +25,7 @@ time.sleep(1)
 while key.is_pressed('esc') == False:                       # Loop indefinitely until the escape key is pressed
     current_time = time.time()                              # Note the current time
     if math.floor(current_second) != previous_second:       # If the current second, rounded down, does not match the previous second, a second has passed
-        if search_dist < 1200:                              # If the search distance is less than 1200 pixels
+        if search_dist < 1190:                              # If the search distance is less than 1200 pixels
             search_dist += 4                                # Increase the current search distance by 4 pixels
         previous_second = math.floor(current_second)        # Set previous_second to the current_second, rounded down
     image = gui.screenshot(region=(left,top,width,height))  # Take a screenshot of the previously defined game area
