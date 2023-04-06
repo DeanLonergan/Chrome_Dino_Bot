@@ -2,9 +2,9 @@
 
 The genesis of this project was a programming challenge I participated in during my Undergraduate work placement. We were asked to automate the Chrome Dino game, and the solution with the highest average score after 10 runs would win. The rules were straightforward; anything goes so long as the game is not tampered with.
 
-There were ten teams of two, my teammate [@LukeCanny](https://github.com/lukecanny) and I ended up coming second with a 10-run average of over 30,000 points. Our solution was based on the same principles as this project, with a bit of a jankier and less refined approach. We had a day to work on it and another day to test it. The highest overall score we achieved using this method was over 56,000.
+There were ten teams of two, my teammate [@LukeCanny](https://github.com/lukecanny) and I ended up coming second with a 10-run average of over 30,000 points. Our solution was based on the same principles as this project, with a bit of a jankier and less refined approach. We had a day to work on it and another day to test it. The highest score this program has been able to achieve thus far is just over 90,000.
 
-![high score](https://user-images.githubusercontent.com/74914758/230321715-c2066023-efdf-4924-a211-8e92dbb3e592.png)
+![high score](https://user-images.githubusercontent.com/74914758/230424167-f5b935c8-e226-4983-9fe7-3cce3ec3d5a7.png)
 
 # How it works
 
