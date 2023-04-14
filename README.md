@@ -2,9 +2,9 @@
 
 The genesis of this project was a programming challenge I participated in during my Undergraduate work placement. We were asked to automate the Chrome Dino game, and the solution with the highest average score after 10 runs would win. The rules were straightforward; anything goes so long as the game is not tampered with.
 
-There were ten teams of two, my teammate [@LukeCanny](https://github.com/lukecanny) and I ended up coming second with a 10-run average of over 30,000 points. Our solution was based on the same principles as this project, with a bit of a jankier and less refined approach. We had a day to work on it and another day to test it. The highest score this program has been able to achieve thus far is just over 90,000.
+There were ten teams of two, my teammate [@LukeCanny](https://github.com/lukecanny) and I ended up coming second with a 10-run average of over 30,000 points. Our solution was based on the same principles as this project, with a bit of a jankier and less refined approach. We had a day to work on it and another day to test it. The highest score this program has been able to achieve thus far is just over 207,000.
 
-![high score](https://user-images.githubusercontent.com/74914758/230424167-f5b935c8-e226-4983-9fe7-3cce3ec3d5a7.png)
+![high score](https://user-images.githubusercontent.com/74914758/232114661-239a98e1-d0b8-4e45-8570-348d0c226b95.PNG)
 
 # How it works
 
@@ -51,6 +51,6 @@ Every machine is different, so it will take some time to dial in these variables
 
 # Run
 
-Running the program is very straight forward. Ensure the official version of the Chrome Dino game is open and ready to go in your browser (navigate to chrome://dino/). Then run chrome_dino_bot.py, switch to the browser and click on the browser window to so that it is active. You'll know after the first cactus if it's working or not. When you want the program to stop, just press the escape key.
+Running the program is very straight forward. Ensure the official version of the Chrome Dino game is open and ready to go in your browser (navigate to chrome://dino/). Then run chrome_dino_bot.py, switch to the browser and click on the browser window so that it is active. You'll know after the first cactus if it's working or not. When you want the program to stop, just press the escape key.
 
 Bear in mind that the program uses a timer to determine the game speed, so simply restarting the game after a game over will result in the program continuing to assume the game is running at a higher speed. Every time the game restarts, the program must also be restarted.
